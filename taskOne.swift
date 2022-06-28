@@ -16,6 +16,7 @@ class taskOne: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        self.title = "taskOne"
         taskOneTableView.dataSource = self
         taskOneTableView.delegate = self
     }

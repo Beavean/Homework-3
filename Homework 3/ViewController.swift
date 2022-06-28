@@ -11,10 +11,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tasksTableView: UITableView!
     
-    let arrayOfTasks = ["taskOne", "taskTwo", "taskThree", "taskFour", "taskFive", "taskSix", "taskSeven"]
+    let arrayOfTasks = ["taskOne", "taskTwo", "taskThree", "taskFour", "taskFive"]
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        self.title = "Homework 3"
         tasksTableView.dataSource = self
         tasksTableView.delegate = self
     }
@@ -26,7 +27,7 @@ extension ViewController: UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let main = UIStoryboard(name: "Main", bundle: nil)
-        let taskOneViewController =  main.instantiateViewController(withIdentifier: "taskOne")
+        let taskOneViewController =  main.instantiateViewController(withIdentifier: arrayOfTasks[indexPath.row])
         navigationController?.pushViewController(taskOneViewController, animated: true)
     }
 }

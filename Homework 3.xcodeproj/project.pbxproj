@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0830DA0B2869EFD10041D8AA /* taskTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0830DA0A2869EFD00041D8AA /* taskTwo.swift */; };
+		0830DA0D2869FF700041D8AA /* taskThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0830DA0C2869FF700041D8AA /* taskThree.swift */; };
+		0830DA0F286B017F0041D8AA /* taskFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0830DA0E286B017F0041D8AA /* taskFour.swift */; };
+		0830DA15286B2FCB0041D8AA /* taskFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0830DA14286B2FCB0041D8AA /* taskFive.swift */; };
+		0830DA18286B36AE0041D8AA /* taskFiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0830DA16286B36AE0041D8AA /* taskFiveTableViewCell.swift */; };
+		0830DA19286B36AE0041D8AA /* taskFiveTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0830DA17286B36AE0041D8AA /* taskFiveTableViewCell.xib */; };
 		0833C7612867204F00928C32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0833C7602867204F00928C32 /* AppDelegate.swift */; };
 		0833C7632867204F00928C32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0833C7622867204F00928C32 /* SceneDelegate.swift */; };
 		0833C7652867204F00928C32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0833C7642867204F00928C32 /* ViewController.swift */; };
@@ -19,6 +24,11 @@
 
 /* Begin PBXFileReference section */
 		0830DA0A2869EFD00041D8AA /* taskTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskTwo.swift; sourceTree = SOURCE_ROOT; };
+		0830DA0C2869FF700041D8AA /* taskThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskThree.swift; sourceTree = SOURCE_ROOT; };
+		0830DA0E286B017F0041D8AA /* taskFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskFour.swift; sourceTree = SOURCE_ROOT; };
+		0830DA14286B2FCB0041D8AA /* taskFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskFive.swift; sourceTree = SOURCE_ROOT; };
+		0830DA16286B36AE0041D8AA /* taskFiveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskFiveTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		0830DA17286B36AE0041D8AA /* taskFiveTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = taskFiveTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		0833C75D2867204F00928C32 /* Homework 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0833C7602867204F00928C32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0833C7622867204F00928C32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +79,11 @@
 				0833C76E2867205100928C32 /* Info.plist */,
 				0833C77E28673B2F00928C32 /* taskOne.swift */,
 				0830DA0A2869EFD00041D8AA /* taskTwo.swift */,
+				0830DA0C2869FF700041D8AA /* taskThree.swift */,
+				0830DA0E286B017F0041D8AA /* taskFour.swift */,
+				0830DA14286B2FCB0041D8AA /* taskFive.swift */,
+				0830DA16286B36AE0041D8AA /* taskFiveTableViewCell.swift */,
+				0830DA17286B36AE0041D8AA /* taskFiveTableViewCell.xib */,
 			);
 			path = "Homework 3";
 			sourceTree = "<group>";
@@ -133,6 +148,7 @@
 			files = (
 				0833C76D2867205100928C32 /* LaunchScreen.storyboard in Resources */,
 				0833C76A2867205100928C32 /* Assets.xcassets in Resources */,
+				0830DA19286B36AE0041D8AA /* taskFiveTableViewCell.xib in Resources */,
 				0833C7682867204F00928C32 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,10 +160,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0830DA0F286B017F0041D8AA /* taskFour.swift in Sources */,
 				0833C7652867204F00928C32 /* ViewController.swift in Sources */,
+				0830DA0D2869FF700041D8AA /* taskThree.swift in Sources */,
+				0830DA18286B36AE0041D8AA /* taskFiveTableViewCell.swift in Sources */,
 				0830DA0B2869EFD10041D8AA /* taskTwo.swift in Sources */,
 				0833C77F28673B2F00928C32 /* taskOne.swift in Sources */,
 				0833C7612867204F00928C32 /* AppDelegate.swift in Sources */,
+				0830DA15286B2FCB0041D8AA /* taskFive.swift in Sources */,
 				0833C7632867204F00928C32 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
