@@ -8,7 +8,7 @@
 import UIKit
 
 class taskFiveTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var profileName: UILabel!
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var postImage: UIImageView!
@@ -21,6 +21,4 @@ class taskFiveTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
     }
-
-    
 }

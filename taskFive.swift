@@ -40,6 +40,12 @@ class Post {
     }
 }
 
+let pluto = Post(avatarImageName: "Pluto", postImageName: "Pluto", viewCount: 123, postDescription: "(minor-planet designation: 134340 Pluto) is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune.", countOfComments: 2, postedAt: "February 18, 1930")
+let neptune = Post(avatarImageName: "Neptune", postImageName: "Neptune", viewCount: 999, postDescription: "is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet.", countOfComments: 2, postedAt: "23 September 1846")
+let saturn =  Post(avatarImageName: "Saturn", postImageName: "Saturn", viewCount: 555, postDescription: "is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter", countOfComments: 123, postedAt: "Something like 1655")
+
+let arrayOfPosts = [pluto, neptune, saturn]
+
 extension taskFive: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 390
@@ -51,25 +57,24 @@ extension taskFive: UITableViewDelegate {
 
 extension taskFive: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return arrayOfPosts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell =  tableView.dequeueReusableCell(withIdentifier: "taskFiveTableViewCell", for: indexPath) as? taskFiveTableViewCell  else { return UITableViewCell() }
-        cell.selectionStyle = .none
-        cell.avatarImage.layer.cornerRadius = cell.avatarImage.frame.height / 2
-        cell.avatarImage.clipsToBounds = true
-        cell.profileName.text = pluto.avatarImageName
-        cell.avatarImage.image = UIImage(named: pluto.avatarImageName)
-        cell.postImage.image = UIImage(named: pluto.postImageName)
-        cell.postComment.text = "\(pluto.avatarImageName): \(pluto.postDescription)"
-        cell.viewCount.text = "\(pluto.viewCount) views"
-        cell.otherComments.text = "View all \(pluto.countOfComments) comments"
-        cell.timeSincePosted.text = pluto.postedAt
-        return cell
+        guard let post =  tableView.dequeueReusableCell(withIdentifier: "taskFiveTableViewCell", for: indexPath) as? taskFiveTableViewCell  else { return UITableViewCell() }
+        let item = arrayOfPosts[indexPath.row]
+        post.selectionStyle = .none
+        post.avatarImage.layer.cornerRadius = post.avatarImage.frame.height / 2
+        post.avatarImage.clipsToBounds = true
+        post.profileName.text = item.avatarImageName
+        post.avatarImage.image = UIImage(named: item.avatarImageName)
+        post.postImage.image = UIImage(named: item.postImageName)
+        post.postComment.text = "\(item.avatarImageName) - \(item.postDescription)"
+        post.viewCount.text = "\(item.viewCount) views"
+        post.otherComments.text = "View all \(item.countOfComments) comments"
+        post.timeSincePosted.text = item.postedAt
+        return post
     }
 }
-
-let pluto = Post(avatarImageName: "Pluto", postImageName: "Pluto", viewCount: 123, postDescription: "(minor-planet designation: 134340 Pluto) is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune.", countOfComments: 2, postedAt: "February 18, 1930")
 
 

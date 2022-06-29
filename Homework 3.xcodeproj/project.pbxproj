@@ -27,8 +27,8 @@
 		0830DA0C2869FF700041D8AA /* taskThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskThree.swift; sourceTree = SOURCE_ROOT; };
 		0830DA0E286B017F0041D8AA /* taskFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskFour.swift; sourceTree = SOURCE_ROOT; };
 		0830DA14286B2FCB0041D8AA /* taskFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskFive.swift; sourceTree = SOURCE_ROOT; };
-		0830DA16286B36AE0041D8AA /* taskFiveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskFiveTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		0830DA17286B36AE0041D8AA /* taskFiveTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = taskFiveTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		0830DA16286B36AE0041D8AA /* taskFiveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = taskFiveTableViewCell.swift; path = "Homework 3/taskFiveTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		0830DA17286B36AE0041D8AA /* taskFiveTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = taskFiveTableViewCell.xib; path = "Homework 3/taskFiveTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
 		0833C75D2867204F00928C32 /* Homework 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0833C7602867204F00928C32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0833C7622867204F00928C32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
